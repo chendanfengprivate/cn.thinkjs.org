@@ -1700,7 +1700,7 @@ module.exports = class extends think.Controller {
 
 注：`thenUpdate()` 本质是 `find()` 和 `add()`、`update()` 方法的包装，有使用 `beforeAdd()`, `afterAdd()`, `beforeFind()`, `afterFind()`, `beforeUpdate`, `afterUpdate()` 钩子函数的需要注意一下。
 
-#### updateMany(dataList, options)
+#### updateMany(dataList, options)---------主键名只能是`id`?就不能是别的吗？
 
 * `dataList` {Array} 要更新的数据列表
 * `options` {Object} 操作选项，会通过 [parseOptions](/doc/3.0/relation_model.html#toc-d91) 方法解析
